@@ -1,8 +1,19 @@
 {
   "name": "vue-reqwest",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "description": "A small wrapper for integrating reqwest to vue.",
-  "main": "vue-reqwest.js",
+  "main": "dist/vue-reqwest.min.js",
+  "module": "dist/vue-reqwest.esm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "typings": "types/index.d.ts",
+  "unpkg": "dist/vue-reqwest.min.js",
+  "files": [
+    "src",
+    "dist/*.js",
+    "types/*.d.ts"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/xiaofan9/vue-reqwest"
@@ -14,6 +25,18 @@
   ],
   "dependencies": {
     "reqwest": "^2.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-modules-umd": "^7.12.1",
+    "@babel/preset-env": "^7.11.5",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-umd": "^2.0.0",
+    "gulp-wrap-umd": "^0.2.1"
   },
   "author": "小凡",
   "license": "MIT",
