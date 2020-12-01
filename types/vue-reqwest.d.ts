@@ -1,4 +1,5 @@
 import reqwest from "reqwest";
+// @ts-ignore
 import { App, PluginFunction } from "vue";
 
 export declare class VAxios {
@@ -6,4 +7,4 @@ export declare class VAxios {
   static install (app: PluginFunction<never>, req?: typeof reqwest): void;
 
   static version: string
-};
+}
